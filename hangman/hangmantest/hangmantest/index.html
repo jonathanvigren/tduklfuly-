@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<div class="container2">
+    <button class="wrong" onclick="addImage()">HANG THE MAN</button>
+    <div class="container"  id="hangcontainer">
+        <img class="hang" src="https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang1.png">
+    </div>
+</div>
+
+</html>
+<script>
+
+    var lives = 7;
+
+    function addImage() {
+        var newImage = document.createElement("img");
+        if (lives == 7) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hangfirst.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 6) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang2.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 5) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang3.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 4) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang4.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 3) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang5.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 2) {
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang6.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        }  else if (lives == 1) { 
+            newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang7.png";
+            newImage.className = "hang";
+            lives--;
+            document.getElementById("hangcontainer").appendChild(newImage);
+        } if (lives == 0) {
+            //gameover, kan sättas in i else if ovanför då deras condition möts samtidigt
+        }
+    } 
+
+</script>
+

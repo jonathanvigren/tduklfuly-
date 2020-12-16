@@ -1,0 +1,20 @@
+*{margin:0;padding:0;}
+.container2{
+  width:100vw;
+  height:100vh;
+  background:rgb(51, 51, 51);
+}
+.container{
+  width:235px;
+  height:237px;
+  background:rgb(51, 51, 51);
+  margin:150px auto;
+}
+.hang{
+  position:absolute;
+}
+.wrong{
+    margin:0 auto; 
+    text-align: center; 
+    display:block  
+}
