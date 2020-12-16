@@ -12,41 +12,41 @@
 
 </html>
 <script>
-    var wrongGuess = 1;
+    var wrongGuess = 0;
 
     function addImage() {
         var newImage = document.createElement("img");
-        if (wrongGuess == 1) {
+        if (wrongGuess == 0) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hangfirst.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 2) {
+        }  else if (wrongGuess == 1) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang2.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 3) {
+        }  else if (wrongGuess == 2) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang3.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 4) {
+        }  else if (wrongGuess == 3) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang4.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 5) {
+        }  else if (wrongGuess == 4) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang5.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 6) {
+        }  else if (wrongGuess == 5) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang6.png";
             newImage.className = "hang";
             wrongGuess++;
             document.getElementById("hangcontainer").appendChild(newImage);
-        }  else if (wrongGuess == 7) {
+        }  else if (wrongGuess == 6) {
             newImage.src = "https://raw.githubusercontent.com/jonathanvigren/tduklfuly-/main/hangman/hang7.png";
             newImage.className = "hang";
             document.getElementById("hangcontainer").appendChild(newImage);
